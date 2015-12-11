@@ -14,6 +14,6 @@ local pwd='%{$fg[blue]%}%~%{$reset_color%}'
 local hostname='$fg[cyan]%m'
 local username='$fg[yellow]%n'
 local git_branch='$(git_prompt_status)%{$reset_color%}$(git_prompt_info)%{$reset_color%}'
-local return_code='%(?..%{$fg[red]%}%? ↵%{$reset_color%})'
-PROMPT="${username}%{$reset_color%}@${hostname}%{$reset_color%}[${pwd}]${return_code} ${git_branch}
+local return_code='%(?..%{$fg[red]%} <%?>%{$reset_color%})'
+PROMPT="${username}%{$reset_color%}@${hostname}%{$reset_color%}[${pwd}]${return_code}${git_branch}
 :"
